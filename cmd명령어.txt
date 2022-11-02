@@ -1,0 +1,51 @@
+타코트론 학습 시키기
+
+가상환경 실행시키기
+conda activate final
+
+pytorch cuda 11.6 설치 하기
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/cu116
+
+바탕화면에 tacotron2 깃클론 하기
+cd Desktop
+git clone https://github.com/JoungheeKim/tacotron2.git
+
+디렉토리에 폴더 확인하기
+dir
+
+깃 클론 폴더에 있는 requirement 하나씩 다운로드해서 오류 없게 만들기
+
+클론한 폴더로 작업환경 바꾸기
+cd tacotron2
+
+파일 설치를 위해 작업환경 바꾸기
+cd waveglow  
+
+waveglow 깃클론 하기
+git clone https://github.com/NVIDIA/waveglow.git
+
+cuda환경 확인하기
+python
+import torch
+torch.cuda.is_available()
+#true이면 cuda환경 가능하다
+
+확인하고 python종료 시키기
+ctrl+z
+!빼고 명령어 실행하기
+
+
+###########AWS 쓰기###########
+/home/ubuntu
+mkdir workspace
+pwd
+
+#경로 안으로 들어가기
+cd workspace
+
+workspace$명령어 입력
+
+#이전으로 나오기
+cd ..
+
